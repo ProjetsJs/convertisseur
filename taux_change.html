@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converseur de Devise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>CONVERTISSEUR DE DEVISE</h1>
+    <div class="container right-panel">
+        <div class="container__form container--">
+            <form action="#" class="form" id="form1">
+                <div class="converter-inputs">
+                    <div class="from-amount">
+                        <label for="">Montant</label>
+                        <input type="number" class="form-control" placeholder="$" min="0" value="1">
+                    </div>
+                    <div class="from-currency">
+                        <label for="">De</label>
+                        <select>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                    <div class="icon">
+                        <button type="button" id="swap-btn">
+                            <img src="flech.png" style="height: 40px; " class="imgj">
+                        </button>
+                    </div>
+                    <div class="to-currency">
+                        <label for="">A</label>
+                        <select>
+                            <option>USD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="result-wrapper">
+                    <p>
+                        <span id="from-result"></span>
+                        =
+                        <span id="to-result"></span>
+                    </p>
+                </div>
+                <button type="submit" id="convert-btn">convertir</button>
+            </form>
+           
+            <script src="taux_change.js"></script>
+        </div>
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
